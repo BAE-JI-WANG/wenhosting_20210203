@@ -12,7 +12,7 @@ h1, .h1 {
   }
   
   .header-logo {
-    max-width: 1000px;
+    max-width: 400px;
   }
   
   .header-title {
@@ -54,40 +54,6 @@ h1, .h1 {
     background-color: #7d97ad;
     border-color: #7d97ad;
   }
-  /* Background image from https://material.io/guidelines/material-design/introduction.html */
-  /*.background-material {
-    background: no-repeat center url("https://storage.googleapis.com/material-design/publish/material_v_12/assets/0Bx4BSt6jniD7Y1huOXVQdlFPMmM/materialdesign-introduction.png");
-  }
-  */
-  /* Responsive typography */
-  /* Haven't had much success with this yet */
-  /*
-  html {
-    font-size: 1rem;
-  }
-  
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 1.2rem;
-    }
-  }
-  
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1.4rem;
-    }
-  }
-  
-  @include media-breakpoint-up(lg) {
-    html {
-      font-size: 1.6rem;
-    }
-  }*/
-  
-  /* Additional CSS from Bootstrap narrow-jumbotron template */
-  
-  
-  /* Space out content a bit */
   body {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
