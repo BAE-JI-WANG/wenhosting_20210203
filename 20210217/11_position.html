@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            border: 10px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        .red
+        {
+            background-color: red;
+            position: static; 
+            left: 50px; /* 기본값이라 마음대로 바꿀 수 없음 */
+        }
+        .green
+        {
+            background-color: springgreen;
+            position: relative; 
+            left: 50px; /* static을 기준으로 이동 */
+        }
+        .blue
+        {
+            background-color: skyblue;
+            position: fixed; /* 무조건 0,0(화면 좌측상단)에서 시작함 */
+            left: 500px;
+            top: 500px;
+        }
+        .pink
+        {
+            background-color: hotpink;
+            position: absolute; /* 부모태그의 속성이 static이 아닐때 부모태그의 0,0을 기준으로 이동 */
+            left: 20px;
+            top: 20px;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class= "red box">
+        <div class= "box pink">1</div>
+    </div>
+    <div class= "green box"></div>
+    <div class= "blue box"></div>
+
+    <div class= "box green">
+        <div class= "box pink">2</div>
+    </div>
+</body>
+</html>

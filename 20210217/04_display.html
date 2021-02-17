@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span
+        {
+            background-color: rebeccapurple;
+        }
+        div
+        {
+            background-color: blueviolet;
+        }
+        p
+        {
+            background-color: blue;
+        }
+        #box
+        {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+        }
+        p:nth-of-type(2)
+        {
+            /* 완전히 사라지게 함 */
+            /*display: none;*/
+
+            /* 공간을 남기고 텍스트는 숨김 */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <span>lo----</span>
+    <div id="box">
+        <span>Lorem, ipsum dolor.</span>
+    </div>
+    <div id="box2">
+        <span>Lorem ipsum dolor sit amet.</span>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
