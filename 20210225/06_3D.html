@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap
+        {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .box
+        {
+            width: 200px;
+            height: 200px;
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+        .box:nth-child(1)
+        {
+            background-color: blueviolet;
+            transform: translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(2)
+        {
+            background-color: crimson;
+            transform: rotateY(90deg) translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(3)
+        {
+            background-color: skyblue;
+            transform: rotateY(180deg) translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(4)
+        {
+            background-color: yellow;
+            transform: rotateX(270deg) translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(5)
+        {
+            background-color: lightcoral;
+            transform: rotateX(90deg) translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(6)
+        {
+            background-color: brown;
+            transform: rotateY(270deg) translate3d(0px, 0px, 100px);
+        }
+        .wrap
+        {
+            transform-style: preserve-3d;
+        }
+        @keyframes _3d_ani
+        {
+            0%{ transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
+            100%{ transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)}
+        }
+        .wrap
+        {
+            animation-name: _3d_ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            left: 100px;
+            top: 100px;
+        }
+        .box
+        {
+            opacity: 0.3;
+        }
+        /* body
+        {
+            -webkit-perspective: 500;
+        } */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

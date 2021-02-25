@@ -1,0 +1,18 @@
+@color:#123457;
+@color_hover:#cad34d;
+@defaultFontSize : 16px;
+@magin : 10px;
+body
+{
+    color: @color;
+    font-size: @defaultFontSize;
+    margin: @magin*10;
+}
+a
+{
+    color: @color;
+    &:hover /* & 내장 선택자. 블록안의 자신을 가르킴 */
+    {
+        color: @color_hover;
+    }
+}
